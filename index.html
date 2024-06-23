@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TDNFL - Cotton Ginning Manufacturing</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="img/TDNFL_transparent.png" alt="Company Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home" aria-label="Home">Home</a></li>
+                    <li><a href="#about" aria-label="About">About</a></li>
+                    <li><a href="#products" aria-label="Products">Products</a></li>
+                    <li><a href="#contact" aria-label="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="section home">
+        <div class="carousel">
+            <div class="slides" id="carousel-slides">
+                <div class="slide"><img src="img/bg_1.JPG" alt="Slide 1"></div>
+                <div class="slide"><img src="img/bg_2.JPG" alt="Slide 2"></div>
+                <div class="slide"><img src="img/bg_3.JPG" alt="Slide 3"></div>
+            </div>
+            <div class="nav-arrows">
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to TDNFL</h1>
+            <p>Quality Cotton Ginning Manufacturing</p>
+            <a href="#products" class="cta-button">Explore Our Products</a>
+        </div>
+        <!-- Production Counter Section -->
+        <section id="production-counter" class="section production-counter">
+            <div class="container">
+                <h2 class="center" style="font-family: math;font-size: 35px">Production Capacity</h2>
+                <div class="production-layout">
+                    <div class="image-container">
+                        <img src="img/machine.png" alt="Production Image">
+                    </div>
+                    <div class="counters">
+                        <div class="counter-container">
+                            <div class="counter bales-per-day" data-target="300">0</div>
+                            <p class="counter-label">Bales per day</p>
+                        </div>
+                        <div class="counter-container">
+                            <div class="counter bales-per-year" data-target="60000">0</div>
+                            <p class="counter-label">Bales per year</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <!-- End of Production Counter Section -->
+    </section>    
+    
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 style="text-align: center;font-family: math;font-size: 35px">About Us</h2>
+            <div class="about-content">
+                <div class="image-container" style="padding-right: 100px;width: 50%;">
+                    <img src="img/Budhichand Gupta 2.jpg" alt="Production Image">
+                    <p style="text-align: center;">Mr. Budhi chand Gupta</p>
+                </div>
+                <div class="about-text">
+                    <p>Since its inception in 1960, TDNFL, founded by the visionary <b>Mr. Budhi Chand Gupta (Founder)</b>, has emerged as a paramount figure in the cotton industry, pioneering excellence in every facet of its operations. With an unwavering dedication to quality and customer satisfaction, TDNFL has solidified its position as a cornerstone of the cotton sector in India.</p>
+                    <p>Our journey begins with the meticulous sourcing of raw cotton, followed by a streamlined process of production and distribution, culminating in the delivery of premium-grade bales to clients across the nation. Renowned for our uncompromising standards and steadfast commitment to excellence, we take immense pride in not only meeting but exceeding the expectations of our esteemed clientele.</p>
+                    <p>Beyond our core cotton offerings, TDNFL ventures into premium cotton seed production, leveraging cutting-edge techniques to cultivate superior seeds. These seeds, in turn, serve as the foundation for our range of nutritious cattle feed and versatile cottonseed oil, further enriching our product portfolio and contributing to the agricultural ecosystem.</p>
+                    <p>At TDNFL, innovation is at the heart of everything we do. We are relentless in our pursuit of enhancing product quality, exploring new technologies, and championing sustainable practices. Our endeavors extend beyond the confines of the industry as we actively support farmers and the agricultural sector, fostering growth and prosperity across communities in India.</p>
+                    <p>As we forge ahead, guided by the principles of integrity, innovation, and excellence, TDNFL remains steadfast in its commitment to shaping the future of the cotton industry and empowering stakeholders every step of the way.</p>
+                </div>
+            </div>            
+        </div>
+    </section>
+    
+    <section id="products" class="section products">
+        <div class="container">
+            <h2 style="text-align: center;font-family: math;font-size: 35px">Our Products</h2>
+            <div class="products-grid">
+                <div class="product" onclick="loadProductDetails('CottonBale')">
+                    <img src="img/cottonbale.jpg" alt="Cotton Bale">
+                    <p>Cotton Bale</p>
+                </div>
+                
+                <div class="product" onclick="loadProductDetails('CottonSeed')">
+                    <img src="img/cottonseed.jpg" alt="Cotton Seed">
+                    <p>Cotton Seed</p>
+                </div>
+                
+                <div class="product" onclick="loadProductDetails('CottonSeedOil')">
+                    <img src="img/Cottonseedoil.jpg" alt="Cotton Seed Oil">
+                    <p>Cotton Seed Oil</p>
+                </div>
+                
+                <div class="product" onclick="loadProductDetails('CottonSeedCake')">
+                    <img src="img/seedcake.jpg" alt="Cotton Seed Cake">
+                    <p>Cotton Seed Cake</p>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact" style="display: block; background-color: aliceblue; padding-top: 10px; padding-bottom: 70px;">
+        <div class="container">
+            <h2 style="text-align: left; font-family: math; font-size: 35px; margin-bottom: 0px;">Contact Us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Location</h2>
+            <div class="contact-content">
+                <div class="contact-details">
+                    <p style="text-align: left;">Email: <a href="mailto:tdnkukshi@gmail.com">tdnkukshi@gmail.com</a></p>
+                    <p style="text-align: left;">Phone: +91 9893431105</p>
+                    <p style="text-align: left;">LinkedIn: <a href="https://www.linkedin.com/company/tikamsa-dulichand-natural-fibres-limited/" target="_blank">TDNFL</a></p>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4368.10908815252!2d74.75965307594326!3d22.17883317977416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3961ee0a1a11b187%3A0x2044ef5ac73d71f5!2sTDN!5e1!3m2!1sen!2sin!4v1718995942369!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product-details" class="product-details" style="display: none;">
+        <div class="container">
+            <h2 id="product-title"></h2>
+            <img id="product-image" src="" alt="Product Image">
+            <h3>Process</h3>
+            <p id="product-process"></p>
+            <h3>Quality</h3>
+            <p id="product-quality"></p>
+            <button onclick="hideProductDetails()">Back</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 TDNFL. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
